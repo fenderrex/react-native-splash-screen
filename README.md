@@ -76,7 +76,8 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
-            new SplashScreenReactPackage()  //here
+            new SplashScreenReactPackage()  //here//from SplashScreen.SplashScreenReactPackage not SplashScreen
+            
             );
         }
     };
@@ -108,7 +109,7 @@ Update the MainActivity.java file to use `react-native-splash-screen` via the fo
 ```java
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
-import com.cboy.rn.splashscreen.SplashScreen;
+import com.cboy.rn.splashscreen.SplashScreenReactPackage;
 
 public class MainActivity extends ReactActivity {
    @Override
